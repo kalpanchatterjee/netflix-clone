@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Nav.css";
 
 const Nav = (props) => {
+  const transtionNavBar = () => {
+    if (window.scrollY > 100) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", transtionNavBar);
+    return () => {
+      window.removeEventListener("scroll", transtionNavBar);
+    };
+  });
+  const [show, setShow] = useState(false);
   return (
-    <div className="nav">
+    <div className={`nav  ${show ? "nav_black" : ""}`}>
       <div className="nav_container">
         <img
           className="nav_logo"
-          src="https://deadline.com/wp-content/uploads/2020/07/netflix-logo.png"
+          src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
           alt=""
         ></img>
         <img

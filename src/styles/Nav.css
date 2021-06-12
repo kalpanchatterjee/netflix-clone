@@ -5,7 +5,12 @@
 .nav_logo {
   position: fixed;
   left: 0;
-  width: 100%;
+  width: 80px;
+  cursor: pointer;
+  object-fit: contain;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 .nav_avater {
   position: fixed;
@@ -13,4 +18,18 @@
   height: 50px;
   width: 50px;
   top: 3px;
+  cursor: pointer;
+}
+.nav_black {
+  background-color: #111;
+}
+.nav {
+  position: fixed;
+  height: 30px;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.5s;
+  transition-timing-function: all 0.5s;
 }
