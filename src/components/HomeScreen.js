@@ -17,8 +17,8 @@ const HomeScreen = (props) => {
         fetchUrl={requests.fetchNetflixOriginals}
         isLarge
       />
-      <Row title="TopRated" fetchUrl={requests.fetchTopRated} />
-      <Row title="ActionMovies" fetchUrl={requests.fetchNetflixOriginals} />
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
+      <Row title="Action Movies" fetchUrl={requests.fetchNetflixOriginals} />
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />

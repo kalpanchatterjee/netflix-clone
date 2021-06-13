@@ -15,9 +15,9 @@
 .nav_avater {
   position: fixed;
   right: 10px;
-  height: 50px;
-  width: 50px;
-  top: 3px;
+  height: 40px;
+  width: 40px;
+  top: 9px;
   cursor: pointer;
 }
 .nav_black {
